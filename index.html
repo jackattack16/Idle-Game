@@ -14,6 +14,12 @@
     table {
         text-align: center;
     }
+    .upgrades {
+        width: 500px;
+    }
+    .store {
+        width: 500px;
+    }
 </style>
 </head>
 <body onload="updateStore()">
@@ -23,7 +29,7 @@
     <button onclick="press()">click me</button>
 </div>
 <div class="middle">
-    <table>
+    <table class="store">
         <tr>
             <th colspan="3">Buildings</th>
         </tr>
@@ -61,6 +67,11 @@
             <td>
                 <button class="buybutton" onclick="buyItem(this.id)" id="b5">Buy</button>
             </td>
+        </tr>
+    </table>
+    <table id="upgrades" class="upgrades">
+        <tr>
+            <th colspan="4">Upgrades</th>
         </tr>
     </table>
 </div>
