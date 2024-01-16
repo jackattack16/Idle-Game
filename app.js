@@ -1,6 +1,7 @@
 let RP = 0;
 let cps = 0;
 let clickAmount = 1;
+let tickSpeed = 100
 
 const store = {
     b1: { //team member
@@ -84,5 +85,5 @@ function tick() {
     updateDisplays();
   }
   
-  setInterval(tick, 1);
+  setInterval(tick, tickSpeed);
   
