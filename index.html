@@ -2,78 +2,73 @@
 <html>
 <head>
 <title>Scouting Game</title>
-<script src="./app.js">
+<script src="./upgrades.js">
 </script>
+<script src="./newApp.js">
+</script>
+
 <style>
-    div {
-        display: inline-block;
-    }
-    td, th, tr {
-        border: 2px solid black;
-    }
-    table {
-        text-align: center;
-    }
-    .upgrades {
-        width: 500px;
-    }
-    .store {
-        width: 500px;
-    }
+    
 </style>
+<link href="./prty.css" rel="stylesheet">
 </head>
-<body onload="updateStore()">
-<div class="leftSide">
+<body onload="onLoad()">
+  <div class="grid-container">
+<div class="displayArea">
     <p id="counter">0 RP</p>
     <p id="cpsCounter">0 RPPS</p>
     <button onclick="press()">click me</button>
 </div>
-<div class="middle">
+<div class="storeArea">
     <table class="store">
-        <tr>
+        <tr class="storeHeader">
             <th colspan="3">Buildings</th>
         </tr>
-        <tr>
+        <tr class="storeRow">
             <td class="building">Team Member</td>
             <td class="info" id="b1Info"></td>
             <td>
-                <button class="buybutton" onclick="buyItem(this.id)" id="b1">Buy</button>
+                <button class="buyButton" onclick="buyItem(this.id)" id="b1">Buy</button>
             </td>
         </tr>
-        <tr>
+        <tr class="storeRow">
             <td class="building">Scouter</td>
             <td class="info" id="b2Info"></td>
             <td>
-                <button class="buybutton" onclick="buyItem(this.id)" id="b2">Buy</button>
+                <button class="buyButton" onclick="buyItem(this.id)" id="b2">Buy</button>
             </td>
         </tr>
-        <tr>
+        <tr class="storeRow">
             <td class="building">Pit Crew</td>
             <td class="info" id="b3Info"></td>
             <td>
-                <button class="buybutton" onclick="buyItem(this.id)" id="b3">Buy</button>
+                <button class="buyButton" onclick="buyItem(this.id)" id="b3">Buy</button>
             </td>
         </tr>
-        <tr>
+        <tr class="storeRow">
             <td class="building">Pit Crew</td>
             <td class="info" id="b4Info"></td>
             <td>
-                <button class="buybutton" onclick="buyItem(this.id)" id="b4">Buy</button>
+                <button class="buyButton" onclick="buyItem(this.id)" id="b4">Buy</button>
             </td>
         </tr>
-        <tr>
+        <tr class="storeRow">
             <td class="building">Robot</td>
             <td class="info" id="b5Info"></td>
             <td>
-                <button class="buybutton" onclick="buyItem(this.id)" id="b5">Buy</button>
+                <button class="buyButton" onclick="buyItem(this.id)" id="b5">Buy</button>
             </td>
         </tr>
     </table>
+    </div>
+    <div class="upgradesArea">
     <table id="upgrades" class="upgrades">
         <tr>
-            <th colspan="4">Upgrades</th>
+            <th colspan="3">Upgrades</th>
         </tr>
     </table>
 </div>
+<div class="settingsArea">Settings</div>
+<div class="newsArea">News</div>
 </body>
 </html>

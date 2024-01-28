@@ -1,0 +1,77 @@
+body {
+  font-family: Monospace;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+table {
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+      'left store upgrades'
+      'left store settings'
+      'news news news';
+  height: 100%;
+  width: 100%;
+}
+
+.displayArea {
+  grid-area: left;
+  background-color: red;
+  height: 80vh;
+  width: 40vw;
+}
+.storeArea {
+  grid-area: store;
+  background-color: orange;
+  height: 80vh;
+  width: 30vw;
+}
+.upgradesArea {
+  grid-area: upgrades;
+  background-color: yellow;
+  height: 50vh;
+  width: 30vw;
+}
+.settingsArea {
+  grid-area: settings;
+  background-color: lightgreen;
+  height: 30vh;
+}
+.newsArea {
+  grid-area: news;
+  background-color: lightblue;
+  height: 20vh;
+}
+
+.store {
+  border: 2px solid black;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.storeHeader {
+  height: 15%;
+  font-size: 150%;
+}
+
+.store tr {
+  border-bottom: 2px solid black;
+}
+
+.store td {
+  width: 10vw;
+}
+
+.buyButton {
+  height: 45%;
+  background-color: blue;
+}
